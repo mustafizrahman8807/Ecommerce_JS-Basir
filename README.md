@@ -45,3 +45,51 @@
     xi. create router() function
     xii. set main_container innerHTML to HomeScreen.render()
     xiii. set load event of window to router() function
+    
+    *5. Build Url Router**
+
+    i. create routes as route:screen object for home screen
+    ii. create utils.js
+    iii. export parseRequestURL()
+    iv. set url as hash address split by slash
+    v. return resource, id and verb of url
+    vi. update router()
+    vii. set request as parseRequestURL()
+    viii. build parsedUrl and compare with routes
+    ix. if route exists render it, else render Error404
+    x. create screens/Error404.js and render error message
+    
+**6. Create Node.JS Server**
+
+    i. run npm init in root jsamazona folder
+    ii. npm install express
+    iii. create server.js
+    iv. add start command as node backend/server.js
+    v. require express
+    vi. move data.js from frontend to backend
+    vii. create route for /api/products
+    viii. return products in data.js
+    ix. run npm start
+
+**7. Load Products From Backend**
+
+    i. edit HomeScreen.js
+    ii. make render async
+    iii. fetch products from '/api/products' in render()
+    iv. make router() async and call await HomeScreen.render()
+    v. use cors on backend    
+    vi. check the result
+    
+**8. Add Webpack**
+
+    i. cd frontend
+    ii. npm install -D webpack webpack-cli webpack-dev-server
+    iii. npm uninstall live-server
+    iv. "start": "webpack-dev-server --mode development --watch-content-base --open"
+    v. move index.html, style.css and images to frontend folder
+    vi. rename app.js to index.js
+    vii. update index.html
+    viii. add script main.js before body tag
+    ix. npm start
+    x. npm install axios
+    xi. change fetch to axios in HomeScreen
