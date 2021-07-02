@@ -46,7 +46,7 @@
     xii. set main_container innerHTML to HomeScreen.render()
     xiii. set load event of window to router() function
     
-    *5. Build Url Router**
+*5. Build Url Router**
 
     i. create routes as route:screen object for home screen
     ii. create utils.js
@@ -57,7 +57,8 @@
     vii. set request as parseRequestURL()
     viii. build parsedUrl and compare with routes
     ix. if route exists render it, else render Error404
-    x. create screens/Error404.js and render error message
+    x. create screens/Error404.js and render error message  
+ 
     
 **6. Create Node.JS Server**
 
