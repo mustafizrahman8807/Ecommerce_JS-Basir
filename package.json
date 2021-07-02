@@ -4,12 +4,15 @@
   "description": "E-Commerce website with vanilla JS",
   "main": "index.js",
   "scripts": {
-    "start": "live-server src --verbose",
+    "start": "webpack-dev-server --watch-content-base --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kh Mustafijur Rahman",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {}
 }
